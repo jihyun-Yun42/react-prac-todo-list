@@ -13,13 +13,6 @@ function App() {
   const [title, setTitle] = useState('')
   const [content, setContent] = useState('')
 
-  const todoTitle = (event) => {
-    setTitle(event.target.value)
-  }
-
-  const todoContent = (event) => {
-    setContent(event.target.value)
-  }
 
   const clickBtnAddContent = () => {
     const newTodo = {
@@ -64,13 +57,13 @@ function App() {
     <div className="body">
       <div className="navbar">
         <div>
-          제목 <input type="text" value={title} onChange={todoTitle} />
+          제목 <input type="text" value={title} onChange={(event)=>setTitle(event.target.value)} />
         </div>
         <div>
-          내용 <input type="text" value={content} onChange={todoContent} />
+          내용 <input type="text" value={content} onChange={(event) =>setContent(event.target.value)} />
         </div>
         <div className="btn">
-          <button style={{float: "right"}} onClick={clickBtnAddContent}>추가하기</button>
+          <button onClick={clickBtnAddContent}>추가하기</button>
         </div>
       </div>
 
