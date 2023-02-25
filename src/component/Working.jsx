@@ -7,7 +7,7 @@ function Working({ todo, workingDoneBtnClick,workingDeleteBtnClick }) {
 
   return (
     <div className='working'>
-      <div>
+      {/* <div>
         <h2>Working😤</h2>
       </div>
       <div className='total-box'>
@@ -26,7 +26,7 @@ function Working({ todo, workingDoneBtnClick,workingDeleteBtnClick }) {
               </div>
             )
           })}
-      </div>
+      </div> */}
     </div>
   )
 }

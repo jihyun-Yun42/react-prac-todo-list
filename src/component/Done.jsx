@@ -5,7 +5,7 @@ function Done({doneTodo, doneDeleteBtnClick,fromDoneToWorkingBtn}) {
   
   return (
     <div className='working'>
-      <div>
+      {/* <div>
         <h2>Done👍</h2>
       </div>
       <div className='total-box'>
@@ -25,7 +25,7 @@ function Done({doneTodo, doneDeleteBtnClick,fromDoneToWorkingBtn}) {
 
           )})
         }
-      </div>
+      </div> */}
     </div>
   )
 }
