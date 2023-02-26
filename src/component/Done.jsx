@@ -6,7 +6,6 @@ function Done({todo, setTodo}) {
     setTodo(todo.filter(i => i.id !== itemId))
   }
   const cancelBtn = (id) => {
-
     setTodo(todo.map(item=>item.id === id ? {...item, isDone : !item.isDone} : item))
   }
   return (

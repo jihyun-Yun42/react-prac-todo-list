@@ -6,9 +6,7 @@ function Working({ todo, setTodo }) {
     setTodo(todo.filter(i => i.id !== itemId))
   }
   const DoneBtnClick = (id) => {
-    setTodo(todo.map(item=>
-      item.id === id ? {...item, isDone : !item.isDone} : item
-    ))
+    setTodo(todo.map(item=>item.id === id ? {...item, isDone : !item.isDone} : item))
   }
 
   return (
